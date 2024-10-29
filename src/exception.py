@@ -5,7 +5,7 @@ from src.logger import logging
 def error_message_details(error,error_details:sys):
     _,_,exc_tb = error_details.exc_info() #will get to know where the occur will happen and in which file
     file_name = exc_tb.tb_frame.f_code.co_filename
-    error_message = "Error_Occuredin python script[{0}] and line numer[{1}] error message [{2}]".format(file_name,exc_tb.tb_lineno,str(error))
+    error_message = "Error_Occured in python script[{0}] and line number[{1}] error message [{2}]".format(file_name,exc_tb.tb_lineno,str(error))
                                                                                                         
     return error_message                                                                                                 
     
